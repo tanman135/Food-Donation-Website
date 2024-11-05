@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /*background: url('OIP.jfif') no-repeat center center/cover; Background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    max-width: 400px; /* Max width for the container */
+    margin: 20px; /* Margin for the container */
+    padding: 20px; /* Padding for the container */
+    background: white; /* White background for the container */
+    border-radius: 5px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: center; /* Center text in the container */
+}
+
+nav {
+    background: #333; /* Dark background for the navbar */
+    color: #fff; /* White text color for navbar items */
+    padding: 10px; /* Padding for the navbar */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a row */
+    margin: 0 15px; /* Space between navbar items */
+}
+
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark color for the heading text */
+}
+
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+form input {
+    margin-bottom: 10px; /* Margin between input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light gray border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+form button {
+    padding: 10px; /* Padding for the button */
+    background: #007BFF; /* Blue background for the button */
+    color: white; /* White text for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+form button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+p {
+    margin-top: 20px; /* Space above the paragraph */
+    color: #333; /* Dark color for paragraph text */
+}

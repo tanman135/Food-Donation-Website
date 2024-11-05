@@ -1,0 +1,86 @@
+body {
+    margin: 0; /* Reset default margin */
+    font-family: Arial, sans-serif;
+    background: url('OIP.jfif') no-repeat center center/cover; /* Background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #333; /* Default text color */
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto; /* Center container with margin */
+    padding: 20px;
+    background-color: white; /* White background for container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center align heading */
+    color: #333; /* Dark color for heading */
+}
+
+form label {
+    font-weight: bold; /* Bold for labels */
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Padding inside inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button[type="submit"] {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Padding inside button */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text for button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+nav {
+    background: rgba(51, 51, 51, 0.8); /* Dark background for the navbar with transparency */
+    color: #fff; /* White text color for navbar items */
+    padding: 15px; /* Padding for the navbar */
+    position: fixed; /* Fixed position to keep it at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Make sure it stays above other content */
+}
+
+nav ul {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center items horizontally */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    margin: 0 10px; /* Space between navbar items */
+}
+
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}

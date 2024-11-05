@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('OIP.jfif') no-repeat center center/cover; /* Background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack navbar and container vertically */
+}
+
+nav {
+    background: rgba(51, 51, 51, 1); /* Dark background for the navbar with transparency */
+    color: #fff; /* White text color for navbar items */
+    padding: 15px; /* Padding for the navbar */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between navbar items */
+}
+
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding for the links */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+.container {
+    max-width: 800px; /* Wider container for dashboard */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding for the container */
+    background: white; /* White background for the container */
+    border-radius: 9px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
+    text-align: left; /* Align text to the left */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark color for the heading text */
+}
+
+h3 {
+    margin-top: 20px; /* Space above h3 headings */
+    color: #333; /* Dark color for h3 headings */
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #28a745; /* Green background for the button */
+    color: white; /* White text for the button */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 4px; /* Rounded corners for the button */
+    font-weight: bold; /* Bold text for the button */
+    margin-top: 10px; /* Space above the button */
+}
+
+.donate-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+

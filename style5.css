@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4; /* Light grey background for the body */
+}
+
+.container {
+    max-width: 800px; /* Consistent width for all pages */
+    margin: 50px auto; /* Center the container with margin */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: left; /* Align text to the left */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark color for the heading text */
+    text-align: center; /* Center the heading */
+}
+
+form {
+    margin-top: 20px; /* Space above the form */
+}
+
+label {
+    margin-top: 10px; /* Space above labels */
+    display: block; /* Display labels as block elements */
+}
+
+input, textarea {
+    width: 100%; /* Full width for inputs and textareas */
+    padding: 10px; /* Padding for inputs and textareas */
+    margin: 5px 0 15px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners for inputs and textareas */
+}
+
+button {
+    padding: 10px 15px; /* Padding for buttons */
+    background-color: #28a745; /* Green background for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: block; /* Display button as block for full-width */
+    width: 100%; /* Full width for buttons */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+nav {
+    background: #333; /* Dark background for navbar */
+    color: #fff; /* White text for navbar */
+    padding: 10px; /* Padding for navbar */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Inline items for navbar */
+    margin: 0 15px; /* Space between navbar items */
+}
+
+nav ul li a {
+    color: white; /* White text for navbar links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding for the links */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+.hero {
+    background: url('OIP.jfif') no-repeat center center/cover; /* Background image */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Vertical stacking */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    color: black; /* Default text color */
+    position: relative; /* Positioning context for overlay */
+}
+
+.hero::before {
+    content: "";
+    position: absolute; /* Absolute positioning for overlay */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1; /* Overlay below text */
+}
+
+.hero .cont {
+    background: rgba(255, 255, 255, 0.5); /* Slightly transparent white container */
+    padding: 40px; /* Padding for container */
+    border-radius: 10px; /* Rounded corners */
+    z-index: 2; /* Ensure container is above overlay */
+    position: relative; /* Position context for z-index */
+}
+
+.hero h1, .hero .btn {
+    z-index: 2; /* Ensure text and buttons appear above overlay */
+}
+
+.btn {
+    padding: 10px 20px; /* Padding for buttons */
+    background: #007BFF; /* Blue background for buttons */
+    color: white; /* White text for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above button */
+    z-index: 2; /* Ensure button appears above overlay */
+}

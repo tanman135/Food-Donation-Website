@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4; /* Light gray background for the entire page */
+}
+
+.container {
+    text-align: center;
+}
+
+nav {
+    background: #333; /* Dark background for the navbar */
+    color: #fff; /* White text color for navbar items */
+    padding: 10px; /* Padding for the navbar */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a row */
+    margin: 0 15px; /* Space between navbar items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Padding for the links */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+
+nav ul li a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+
+.hero {
+    background: url('OIP.jfif') no-repeat center center/cover; /* Background image for hero section */
+    height: 100vh; /* Full height for hero section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color in hero section */
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for hero section */
+    z-index: 1;
+}
+
+h2 {
+    margin-top: 30px; /* Space above the heading */
+    color: #333; /* Dark color for the heading text */
+    z-index: 2; /* Ensure heading appears above overlay */
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 30px; /* Padding for the form area */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for a slight 3D effect */
+    margin: 20px auto; /* Center the form */
+    max-width: 400px; /* Max width for the form */
+    position: relative; /* Position relative to z-index */
+    z-index: 2; /* Ensure form appears above overlay */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin: 10px 0; /* Margin between input fields */
+    border: 1px solid #ccc; /* Light gray border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+button {
+    background: #007BFF; /* Blue background for the button */
+    color: white; /* White text for the button */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+p {
+    margin-top: 20px; /* Space above the paragraph */
+}
+
+a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
